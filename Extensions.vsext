@@ -1,0 +1,40 @@
+{
+  "id": "Aqovia.VisualStudio.ExtensionPack",
+  "name": "Aqovia VisualStudio ExtensionPack",
+  "description": "Aqovia.VisualStudio.ExtensionPack is an extension pack which contains extensions we use at Aqovia.",
+  "version": "1.0.0.0",
+  "extensions": [
+    {
+      "vsixId": "EPiServer.CMS.B7A45E5E-3836-4864-A117-95207E71A9B3",
+      "name": "Episerver CMS Visual Studio Extension"
+    },
+    {
+      "vsixId": "ODataT4ItemTemplate.2592cbe8-b1fe-45b6-9a18-7518079af6a8",
+      "name": "OData v4 Client Code Generator"
+    },
+    {
+      "vsixId": "TechTalk.SpecFlow.VisualStudioIntegration",
+      "name": "SpecFlow for Visual Studio 2019"
+    },
+    {
+      "vsixId": "dda2a29d-8fd9-4131-adc5-afcf6ef36b25",
+      "name": "RunAsAdmin"
+    },
+    {
+      "vsixId": "GitWebLinks.reduckted.51c9bc00-f868-4061-a75c-8f6e758bb7f6",
+      "name": "Git Web Links"
+    },
+    {
+      "vsixId": "d42db039-5432-4399-bb62-67a9b4c3b838",
+      "name": "Roslynator 2019"
+    },
+    {
+      "vsixId": "ProductivityPowerPack.0d5b9d71-e118-46de-a20c-555176e53900",
+      "name": "Productivity Power Tools 2017/2019"
+    },
+    {
+      "vsixId": "Editor_Guidelines.Microsoft Corp..123716ef-b2ed-4fab-bbcf-1d5f84856ca3",
+      "name": "Editor Guidelines"
+    }
+  ]
+}

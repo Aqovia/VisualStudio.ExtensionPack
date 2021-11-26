@@ -2,7 +2,7 @@
   "id": "Aqovia.VisualStudio.ExtensionPack",
   "name": "Aqovia VisualStudio ExtensionPack",
   "description": "Aqovia.VisualStudio.ExtensionPack is an extension pack which contains extensions we use at Aqovia.",
-  "version": "1.0.0.0",
+  "version": "2.0.0.0",
   "extensions": [
     {
       "vsixId": "EPiServer.CMS.B7A45E5E-3836-4864-A117-95207E71A9B3",
@@ -17,6 +17,10 @@
       "name": "SpecFlow for Visual Studio 2019"
     },
     {
+      "vsixId": "SpecFlow.VisualStudio.2022.3c1441cb-29e4-49a6-b430-c98205b95236",
+      "name": "SpecFlow for Visual Studio 2022"
+    },
+    {
       "vsixId": "dda2a29d-8fd9-4131-adc5-afcf6ef36b25",
       "name": "RunAsAdmin"
     },
@@ -29,16 +33,24 @@
       "name": "Roslynator 2019"
     },
     {
+      "vsixId": "f326ee1b-81a6-4577-b251-1f29d391cef3",
+      "name": "Roslynator 2022"
+    },
+    {
       "vsixId": "ProductivityPowerPack.0d5b9d71-e118-46de-a20c-555176e53900",
       "name": "Productivity Power Tools 2017/2019"
+    },
+    {
+      "vsixId": "ProductivityPowerPack2022.0d5b9d71-e118-46de-a20c-555176e53900",
+      "name": "Productivity Power Tools 2022"
     },
     {
       "vsixId": "Editor_Guidelines.Microsoft Corp..123716ef-b2ed-4fab-bbcf-1d5f84856ca3",
       "name": "Editor Guidelines"
     },
     {
-      "vsixId": "9da28329-f9d5-4f18-91c3-d3285b103d1a",
-      "name": "Learn the Shortcut"
+      "vsixId": "EditorGuidelines.f7dfa085-35e4-4844-8842-48298d5eaee0",
+      "name": "Editor Guidelines"
     }
   ]
 }

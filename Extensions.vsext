@@ -35,6 +35,10 @@
     {
       "vsixId": "Editor_Guidelines.Microsoft Corp..123716ef-b2ed-4fab-bbcf-1d5f84856ca3",
       "name": "Editor Guidelines"
+    },
+    {
+      "vsixId": "9da28329-f9d5-4f18-91c3-d3285b103d1a",
+      "name": "Learn the Shortcut"
     }
   ]
 }

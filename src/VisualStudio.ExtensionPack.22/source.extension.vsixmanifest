@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Aqovia.VisualStudio.ExtensionPack" Version="1.0" Language="en-US" Publisher="Aqovia" />
-        <DisplayName>Aqovia VisualStudio ExtensionPack</DisplayName>
-        <Description xml:space="preserve">Aqovia VisualStudio ExtensionPack is an extension pack which contains extensions we use at Aqovia.</Description>
+        <Identity Id="Aqovia.VisualStudio.ExtensionPack.22" Version="1.0" Language="en-US" Publisher="Aqovia" />
+        <DisplayName>Aqovia VisualStudio ExtensionPack 2022</DisplayName>
+        <Description xml:space="preserve">Aqovia VisualStudio ExtensionPack 2022 is a pack of extensions that we use at Aqovia.</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />

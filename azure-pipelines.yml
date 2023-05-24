@@ -18,6 +18,7 @@ stages:
   - stage: Build
     jobs:
       - job: build
+        displayName: build vsix package
         pool:
           vmImage: windows-2022
         variables:
@@ -60,7 +61,7 @@ stages:
             displayName: publish artifact
             artifact: package
 
-  - stage: deploy
+  - stage: Deploy
     dependsOn:
       - build
     condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))

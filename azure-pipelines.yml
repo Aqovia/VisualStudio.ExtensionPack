@@ -1,11 +1,6 @@
-trigger:
-  - master
-
-pr:
-  - master
-
+pr: none
 pool:
-  vmImage: windows-latest
+  vmImage: windows-2022
 
 variables:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
@@ -19,8 +14,6 @@ stages:
     jobs:
       - job: build
         displayName: build vsix package
-        pool:
-          vmImage: windows-2022
         variables:
           solution: '**\*.sln'
           buildPlatform: Any CPU
@@ -68,8 +61,6 @@ stages:
     jobs:
       - deployment: publish_vsix
         displayName: publish vsix package
-        pool:
-          vmImage: windows-2022
         environment: production
         strategy:
           runOnce:

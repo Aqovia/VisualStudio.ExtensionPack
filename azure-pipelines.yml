@@ -59,3 +59,20 @@ stages:
           - publish: $(Build.ArtifactStagingDirectory)
             displayName: publish artifact
             artifact: package
+
+  - stage: deploy
+    dependsOn:
+      - build
+    condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+    jobs:
+      - deployment: publish_vsix
+        displayName: publish vsix package
+        pool:
+          vmImage: windows-2022
+        environment: production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - pwsh: $(Pipeline.Workspace)/package/build/publish-vsix.ps1 -PersonalAccessToken $(MarketplacePAT)
+                  displayName: publish vsix to marketplace

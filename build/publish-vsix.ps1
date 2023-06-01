@@ -16,10 +16,15 @@ $VsixPublisher = Join-Path -Path $VSInstallationPath `
     -Resolve
 
 Write-Host "VsixPublisher path: $VsixPublisher"
-Test-Path $VsixPublisher
 
-& $VsixPublisher publish `
-    -payload $VsixPath `
-    -publishManifest $ManifestPath `
-    -personalAccessToken $PersonalAccessToken `
-    -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02,VSIXValidatorWarning08"
+$VsixPublisherExists = Test-Path $VsixPublisher
+if (!$VsixPublisherExists) {
+    Write-Host "VsixPublisher path doesn't exist."
+}
+else {
+    & $VsixPublisher publish `
+        -payload $VsixPath `
+        -publishManifest $ManifestPath `
+        -personalAccessToken $PersonalAccessToken `
+        -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02,VSIXValidatorWarning08"
+}
